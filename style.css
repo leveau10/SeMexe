@@ -1,0 +1,197 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.background-escurecido {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: -1;
+}
+
+
+h1{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 40px;
+  margin-left: 3vh;
+  margin-top: -5px;
+}
+
+.container3 {
+  display: flex;
+}
+
+header img{
+  width: 300px;
+  height: 350px;
+  margin-top: -100px;
+  margin-left: 1220px;
+}
+
+.principal{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.columnOne{
+  width: 20%;
+  text-align: left;
+  padding-left: 1em;
+  margin-top: -146;
+}
+
+.columnOne h4{
+  margin-top: 50px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  color: white
+}
+
+.columnOne img{
+  width: 200px;
+  margin-left: 30px;
+}
+
+.columnOne h3{
+  margin-top: 85px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  color: white
+}
+
+.columnOne p{
+  font-family: 'Press Start 2P', cursive;
+  color: green;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.bonequinho{
+  text-align: left;
+}
+
+.bonequinho img{
+  height: 16.2em;
+  width: 240px;
+  margin-top: -20px;
+}
+
+.columnTwo{
+  background-color: rgb(46, 129, 35);
+  width: 35%;
+  margin-top: -146px;
+}
+
+.columnTwo h2{
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 40px;
+  margin-top: -40px;
+}
+
+.seta1{
+  width: 60px;
+  transform: rotate(-90deg);
+  margin-left: 290px;
+  margin-top: -25px;
+}
+
+.imagem{
+  width: 550px;
+  height: 350px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.gif {
+  width: 35px;
+  margin-left: 5px;
+  margin-top: -30px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+}
+
+.gif2 {
+  width: 35px;
+  margin-left: 5px;
+  margin-top: -30px;
+}
+
+.textos{
+  margin-top: 40px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  color: black;
+  text-align: left;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.seta2{
+  width: 60px;
+  transform: rotate(90deg);
+  margin-left: 232px;
+  margin-top: 20px;
+}
+
+.columnThree{
+  margin-top: 70px;
+  background-color: rgb(46, 129, 35);
+  width: 20%;
+  margin-top: -70px;
+}
+
+.columnThree h2{
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+.square{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 550px;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.square h3{
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  color: black;
+  text-align: left;
+}
+
+.columnThree h3{
+  margin-top: -3px;
+  margin-left: 10px;
+}
+
+.columnThree img{
+  width: 250px;
+  height: 420px;
+  margin-left: 20px;
+}

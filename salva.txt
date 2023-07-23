@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 2.5vw; /* Usando vw para o tamanho da fonte */
+  margin: 0;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnOne {
+  flex-basis: 25%;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.columnOne h3 {
+  font-size: 2vw; /* Usando vw para o tamanho da fonte */
+  color: white;
+  margin-top: 0;
+}
+
+.columnOne p {
+  font-family: 'Press Start 2P', cursive;
+  color: green;
+  font-size: 1.6vw; /* Usando vw para o tamanho da fonte */
+  font-weight: bold;
+}
+
+.bonequinho {
+  text-align: left;
+}
+
+.bonequinho img {
+  width: 100%;
+  max-width: 16em;
+  height: auto;
+}
+
+.columnTwo {
+  background-color: aquamarine;
+  flex-basis: 50%;
+  padding: 1em;
+}
+
+.columnTwo h2 {
+  text-align: center;
+  font-size: 3vw; /* Usando vw para o tamanho da fonte */
+  color: white;
+  margin-top: 0;
+}
+
+.textos {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5vw; /* Usando vw para o tamanho da fonte */
+  color: black;
+  text-align: left;
+}
+
+.columnThree {
+  background-color: red;
+  flex-basis: 25%;
+  padding: 1em;
+}
+
+.columnThree h2 {
+  text-align: center;
+  font-size: 3vw; /* Usando vw para o tamanho da fonte */
+  color: white;
+  margin-top: 0;
+}
+
+.square {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 40vh; /* Usando vh para definir a altura da seção */
+  margin-top: 1em;
+}
+
+.square h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2vw; /* Usando vw para o tamanho da fonte */
+  color: black;
+  text-align: left;
+}
+
+/* Estilos adicionais para dispositivos menores */
+@media (max-width: 768px) {
+  .principal {
+    flex-direction: column; /* Empilhar as colunas em telas menores */
+  }
+  .columnOne, .columnTwo, .columnThree {
+    flex-basis: 100%;
+    padding: 0.5em;
+  }
+}
