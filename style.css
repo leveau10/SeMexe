@@ -1,8 +1,7 @@
-
 body {
   margin: 0;
   padding: 0;
-  background-image: url("background.gif");
+  background-image: url("src/background.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,101 +17,138 @@ body {
   z-index: -1;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header button{
+  padding: 0;
+  background:none;
+  border: 0;
+}
+
+.voltar{
+  margin-top: 3vh;
+  width: 240px;
+  margin-right: 5vw;
+}
+
+.voltar:hover{
+  transition: box-shadow 0.5s ease;   
+  box-shadow: 0 0px 60px rgba(237, 12, 12, 100);
+}
 
 h1{
   font-family: 'Press Start 2P', cursive;
   color: white;
   font-size: 40px;
   margin-left: 3vh;
-  margin-top: -5px;
+  font-weight: lighter;
 }
 
-.container3 {
-  display: flex;
-}
-
-header img{
-  width: 300px;
-  height: 350px;
-  margin-top: -100px;
-  margin-left: 1220px;
-}
-
-.principal{
-  display: flex;
+main{
   width: 100%;
+  display: flex;
   justify-content: space-between;
 }
 
 .columnOne{
+  display: flex;
+  flex-direction: column;
   width: 20%;
-  text-align: left;
-  padding-left: 1em;
-  margin-top: -146;
+  padding-left: 8px;
 }
 
-.columnOne h4{
-  margin-top: 50px;
+.ranking{
+  text-align:left;
+  background:none;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.ranking h3{
   font-family: 'Press Start 2P', cursive;
-  font-size: 2em;
-  color: white
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 8px;
 }
 
-.columnOne img{
-  width: 200px;
-  margin-left: 30px;
+.ranking img{
+  width: 144px;
 }
 
-.columnOne h3{
-  margin-top: 85px;
+.personagem h3{
   font-family: 'Press Start 2P', cursive;
-  font-size: 2em;
-  color: white
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
 }
 
 .columnOne p{
   font-family: 'Press Start 2P', cursive;
   color: green;
-  font-size: 1.8em;
+  font-size: 16px;
   font-weight: bold;
 }
 
-.bonequinho{
+.personagem img{
   text-align: left;
-}
-
-.bonequinho img{
-  height: 16.2em;
-  width: 240px;
-  margin-top: -20px;
+  width: 176px;
 }
 
 .columnTwo{
-  background-color: rgb(46, 129, 35);
-  width: 35%;
-  margin-top: -146px;
+  width: 40%;
+  margin-top: -32px;
 }
 
 .columnTwo h2{
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   color: white;
-  font-size: 40px;
-  margin-top: -40px;
+  font-size: 32px;
+  background-color: none;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.local-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 129, 35);
 }
 
 .seta1{
-  width: 60px;
+  width: 32px;
   transform: rotate(-90deg);
-  margin-left: 290px;
-  margin-top: -25px;
+  margin-top: 8px;
 }
 
-.imagem{
-  width: 550px;
-  height: 350px;
-  margin-left: 50px;
-  margin-top: 10px;
+.seta1:hover{
+  box-shadow: 0 0 40px white;
+}
+
+.local-imagem{
+  width: 360px;
+}
+
+.textos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.textos h3{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: black;
+}
+
+.textos p{
+  font-size: 16px;
 }
 
 .container {
@@ -126,72 +162,189 @@ header img{
   margin-top: -30px;
 }
 
-.container2 {
-  display: flex;
-  align-items: center;
-}
-
-.gif2 {
-  width: 35px;
-  margin-left: 5px;
-  margin-top: -30px;
-}
-
-.textos{
-  margin-top: 40px;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2em;
-  color: black;
-  text-align: left;
-  align-items: center;
-  margin-left: 60px;
-}
-
 .seta2{
-  width: 60px;
+  width: 32px;
   transform: rotate(90deg);
-  margin-left: 232px;
-  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.seta2:hover{
+  box-shadow: 0 0 40px white;
 }
 
 .columnThree{
-  margin-top: 70px;
-  background-color: rgb(46, 129, 35);
-  width: 20%;
-  margin-top: -70px;
-}
-
-.columnThree h2{
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-  color: black;
-  font-size: 40px;
-  margin-top: 80px;
-}
-
-.square{
-  background-color: rgb(255, 255, 255);
-  width: 300px;
-  height: 550px;
-  margin-left: 40px;
-  margin-top: 60px;
-}
-
-.square h3{
   display: flex;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2em;
-  color: black;
-  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px; 
+  background-color: rgb(46, 129, 35);
+  width: 28%;
 }
 
 .columnThree h3{
-  margin-top: -3px;
-  margin-left: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+}
+
+.square{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 240px;
+}
+
+.square h4{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: black;
+  text-align: left;
+  font-weight: lighter;
+  margin: 8px;
 }
 
 .columnThree img{
-  width: 250px;
-  height: 420px;
-  margin-left: 20px;
+  width: 224px;
+  margin-bottom: 8px
+}
+
+@media (max-width: 480px) {
+
+  .voltar{
+    width: 140px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+  .columnOne{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 8px;
+    margin-top: 24px;
+  }
+  
+  .ranking{
+    text-align:left;
+    background:none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+  }
+  
+  .ranking h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 8px;
+  }
+  
+  .ranking img{
+    width: 48px;
+  }
+  
+  .personagem h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: white;
+    font-weight: lighter;
+  }
+  
+  .columnOne p{
+    font-family: 'Press Start 2P', cursive;
+    color: green;
+    font-size: 9px;
+    font-weight: bold;
+  }
+  
+  .personagem img{
+    text-align: left;
+    width: 88px;
+  }
+
+  .columnTwo{
+    width: 45%;
+    margin-top: 16px;
+  }
+  
+  .columnTwo h2{
+    font-size: 16px;
+  }
+  
+  .local-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 129, 35);
+  }
+  
+  .seta1{
+    width: 16px;
+    transform: rotate(-90deg);
+    margin-top: 8px;
+  }
+  
+  .local-imagem{
+    width: 7em;
+  }
+ 
+  .textos h3{
+    font-size: 10px;
+  }
+  
+  .textos p{
+    font-size: 12px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gif {
+    width: 8px;
+  }
+  
+  .seta2{
+    width: 32px;
+    transform: rotate(90deg);
+    margin-bottom: 8px;
+  }
+  
+  .seta2:hover{
+    box-shadow: 0 0 40px white;
+  }
+
+  .columnThree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px; 
+    background-color: rgb(46, 129, 35);
+    width:120px
+  }
+
+  .columnThree h3{
+    font-size: 16px;
+  }
+
+  .square h4{
+    font-size: 16px;
+  }
+
+  .square{
+    width: 112px;
+  }
+
+  .columnThree img{
+    width: 80px;
+  }
 }

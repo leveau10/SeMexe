@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("background.gif");
+    background-image: url("src/background.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,7 +17,7 @@ body{
     z-index: -1;
 }
 
-button{
+header button{
     padding: 0;
     background:none;
     border: 0;
@@ -26,7 +26,6 @@ button{
 header{
     display: flex;
     justify-content: space-between;
-    
 }
 
 h1{
@@ -88,7 +87,6 @@ form{
 .entrar{
     width: 160px;
     background: none;
-    border: 0;
 }
 
 .entrar:hover{
