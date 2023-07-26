@@ -59,6 +59,7 @@ body {
     font-size: 30px;
     margin-left: 3vh;
     font-weight: lighter;
+    text-align: center;
 }
 
   table {
@@ -85,4 +86,14 @@ body {
   .emoji {
     font-size: 18px;
     padding-left: 5px;
+  }
+
+  @media (max-width: 480px) {
+    .voltar{ 
+      width: 140px;
+    }
+  
+    h1{
+      font-size: 24px;
+    }
   }
