@@ -212,7 +212,6 @@ main{
 }
 
 @media (max-width: 480px) {
-
   .voltar{
     width: 140px;
   }
@@ -221,37 +220,49 @@ main{
     font-size: 24px;
   }
 
-  .columnOne{
-    display: flex;
+  main{
     flex-direction: column;
-    width: 20%;
-    padding-left: 8px;
+    align-items: center;
+  }
+
+  .columnOne{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
     margin-top: 24px;
   }
   
   .ranking{
-    text-align:left;
-    background:none;
-    border: none;
-    cursor: pointer;
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:24px;
+    padding: 0 24px 0;
+    text-align: center;
   }
   
   .ranking h3{
     font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+    font-size: 13px;
     color: white;
     font-weight: lighter;
-    margin-bottom: 8px;
   }
   
   .ranking img{
-    width: 48px;
+    width: 64px;
+    margin-bottom: 16px;
   }
-  
+
+  .personagem{
+    text-align:center;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
   .personagem h3{
     font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+    font-size: 13px;
     color: white;
     font-weight: lighter;
   }
@@ -259,7 +270,7 @@ main{
   .columnOne p{
     font-family: 'Press Start 2P', cursive;
     color: green;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: bold;
   }
   
@@ -269,34 +280,29 @@ main{
   }
 
   .columnTwo{
-    width: 45%;
-    margin-top: 16px;
+    width: 95%;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   
   .columnTwo h2{
     font-size: 16px;
   }
   
-  .local-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(46, 129, 35);
-  }
-  
+
   .seta1{
-    width: 16px;
+    width: 24px;
     transform: rotate(-90deg);
     margin-top: 8px;
   }
   
   .local-imagem{
-    width: 7em;
+    width: 70vw;
   }
  
   .textos h3{
-    font-size: 10px;
+    font-size: 14px;
   }
   
   .textos p{
@@ -309,11 +315,12 @@ main{
   }
   
   .gif {
-    width: 8px;
+    margin-top: 2px;
+    width: 20px;
   }
   
   .seta2{
-    width: 32px;
+    width: 24px;
     transform: rotate(90deg);
     margin-bottom: 8px;
   }
@@ -327,9 +334,10 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 64px; 
+    margin-top: 24px; 
     background-color: rgb(46, 129, 35);
-    width:120px
+    width:95%;
+    margin-bottom: 24px;
   }
 
   .columnThree h3{
@@ -348,10 +356,10 @@ main{
     width: 80px;
   }
 }
+/* 
+@media (min-width: 481px) and (max-width: 980px) {
 
-@media (min-width: 480px) and (max-width: 980px) {
-
-  /* Ajustes para o layout entre 480px e 980px */
+  /* Ajustes para o layout entre 480px e 980px 
   h1 {
     font-size: 24px;
     margin-left: 2vh;
@@ -464,20 +472,15 @@ main{
 
   .columnThree img {
     width: 80px;
-  }
+  } */
 
   /* Ajuste para a colunaThree abaixo de 810px */
-  @media (max-width: 810px) {
+  /* @media (max-width: 810px) {
     .columnThree {
       width: 100%;
     }
-  }
+  } */
 
   /* Ajuste para o layout a partir de 480px */
-  @media (min-width: 480px) {
-    .columnThree {
-      margin-top: 32px;
-    }
-  }
+ 
 
-}
