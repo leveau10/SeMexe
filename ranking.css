@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +6,20 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden; /* Prevent horizontal scroll during animation */
+}
+
+.page-transition {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.slide-out {
+  transform: translateX(-100%);
+}
+
+.slide-in {
+  transform: translateX(100%);
 }
 
 .background-escurecido {
@@ -45,6 +60,7 @@ h1{
 .voltar:hover{
     transition: box-shadow 0.5s ease;   
     box-shadow: 0 0px 60px rgba(237, 12, 12, 100);
+    cursor: pointer
 }
 
 body {

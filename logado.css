@@ -5,7 +5,21 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden; /* Prevent horizontal scroll during animation */
 }
+
+.page-transition {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .slide-out {
+    transform: translateX(-100%);
+  }
+  
+  .slide-in {
+    transform: translateX(100%);
+  }
 
 .background-escurecido {
     position: fixed;
